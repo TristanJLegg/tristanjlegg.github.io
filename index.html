@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TristanJLegg</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#home" class="logo">TristanJLegg</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Neural Network Animation -->
+    <section id="home" class="hero">
+        <div class="neural-network-container">
+            <div class="neural-network">
+                <!-- Input Layer: 1 neuron -->
+                <div class="layer input-layer">
+                    <div class="neuron" data-layer="0" data-neuron="0"></div>
+                </div>
+
+                <!-- Hidden Layer 1: 3 neurons -->
+                <div class="layer hidden-layer-1">
+                    <div class="neuron" data-layer="1" data-neuron="0"></div>
+                    <div class="neuron" data-layer="1" data-neuron="1"></div>
+                    <div class="neuron" data-layer="1" data-neuron="2"></div>
+                </div>
+
+                <!-- Hidden Layer 2: 2 neurons -->
+                <div class="layer hidden-layer-2">
+                    <div class="neuron" data-layer="2" data-neuron="0"></div>
+                    <div class="neuron" data-layer="2" data-neuron="1"></div>
+                </div>
+
+                <!-- Hidden Layer 3: 3 neurons -->
+                <div class="layer hidden-layer-3">
+                    <div class="neuron" data-layer="3" data-neuron="0"></div>
+                    <div class="neuron" data-layer="3" data-neuron="1"></div>
+                    <div class="neuron" data-layer="3" data-neuron="2"></div>
+                </div>
+
+                <!-- Output Layer: 1 neuron -->
+                <div class="layer output-layer">
+                    <div class="neuron" data-layer="4" data-neuron="0"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-content">
+            <h1>Tristan J. Legg</h1>
+            <p>Deep Learning Researcher & Engineer</p>
+            <div class="hero-links">
+                <a href="https://github.com/TristanJLegg" class="hero-link">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/tristanjlegg" class="hero-link">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="#contact" class="hero-link">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about fade-in">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>I'm an enthusiastic engineer, focused on developing intelligent systems and solving complex problems through machine learning and deep learning techniques.</p>
+                <p>My expertise spans deep learning architectures and foundational AI concepts, with experience in neural networks, reinforcement learning, and generative AI. I have hands-on experience building everything from scratch - including complete deep learning algorithms in C and fine-tuned diffusion models.</p>
+                <p>Currently seeking opportunities to apply my technical skills and continue learning in dynamic, challenging environments.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section fade-in">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/explore.gif" alt="Exploratory RL Agent Visualisation">
+                </div>
+                <h3>Exploratory RL Agent</h3>
+                <p>Advanced reinforcement learning research investigating autonomous exploration in complex 3D environments. Features custom transformer architectures with attention mechanisms and rigorous comparative analysis across multiple metrics.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">PyTorch</span>
+                    <span class="tech-tag">Reinforcement Learning</span>
+                    <span class="tech-tag">Deep Learning</span>
+                    <span class="tech-tag">Transformers</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/TristanJLegg/ExplorationAgent" class="project-link">View Code</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/dqn.gif" alt="DQN from Scratch Episode">
+                </div>
+                <h3>DQN from Scratch</h3>
+                <p>Complete Deep Q-Network reinforcement learning algorithm built from scratch in pure C with no external dependencies. Includes CartPole environment, neural networks, matrix operations, and visualisation capabilities.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">C</span>
+                    <span class="tech-tag">Neural Networks</span>
+                    <span class="tech-tag">Reinforcement Learning</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/TristanJLegg/dqn-from-scratch" class="project-link">View Code</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/diffusion.gif" alt="Minecraft Diffusion Model Visualisation">
+                </div>
+                <h3>Minecraft Diffusion Model</h3>
+                <p>Complete LoRA fine-tuning system for Stable Diffusion 1.5, trained to generate images in a distinctive Minecraft visual style. Includes custom dataset creation and inference tools for styled image generation from text prompts.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Generative AI</span>
+                    <span class="tech-tag">LoRA Fine-tuning</span>
+                    <span class="tech-tag">PyTorch</span>
+                    <span class="tech-tag">Stable Diffusion</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://huggingface.co/TristanJLegg/MinecraftStyleStableDiffusion" class="project-link">View Model</a>
+                    <a href="https://huggingface.co/datasets/TristanJLegg/MinecraftGameplayCaptioned" class="project-link">Dataset</a>
+                    <a href="https://github.com/TristanJLegg/MinecraftDiffusion" class="project-link">Code</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section fade-in">
+        <h2>Experience & Education</h2>
+        <div class="experience-timeline">
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="experience-title-group">
+                        <h3>Master's in Electronic Engineering (MEng)</h3>
+                        <div class="experience-company">Stellenbosch University</div>
+                    </div>
+                    <div class="experience-date">February 2023 - December 2024</div>
+                </div>
+                <p>Thesis: "Maximising Exploration and Discovery in Unknown Large Intricate 3D Worlds" - Developed advanced reinforcement learning systems and implemented multiple neural network architectures including custom transformer models with attention mechanisms. Gained extensive experience in experimental design and performance optimisation.</p>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="experience-title-group">
+                        <h3>Learning Assistant</h3>
+                        <div class="experience-company">Stellenbosch University</div>
+                    </div>
+                    <div class="experience-date">July 2022 - June 2024</div>
+                </div>
+                <p>Assisted and guided students through tutorials and practicals for the university's computer systems and computer programming modules, developing strong communication and teaching skills while reinforcing my own technical knowledge.</p>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="experience-title-group">
+                        <h3>Software Developer Intern</h3>
+                        <div class="experience-company">DataBalk.nu, The Netherlands</div>
+                    </div>
+                    <div class="experience-date">December 2020 - February 2021</div>
+                </div>
+                <p>Developed and bootstrapped the front-end of an Enterprise Resource Planning system. Learned principles of modularity and re-usability, collaborated with an international team, and on-boarded new software development recruits.</p>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="experience-title-group">
+                        <h3>Bachelor's in Electrical and Electronic Engineering (Honours)</h3>
+                        <div class="experience-company">Stellenbosch University</div>
+                    </div>
+                    <div class="experience-date">February 2019 - December 2022</div>
+                </div>
+                <p>Honours Thesis: "Parallelising Inference in Probabilistic Graphical Models" - Achieved 2.21x speed-up on 8-core system through efficient parallel implementation. Developed strong foundation in machine learning, computer science, and performance optimisation.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section fade-in">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Machine Learning</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Deep Reinforcement Learning</span>
+                    <span class="skill-tag">Generative AI</span>
+                    <span class="skill-tag">PyTorch</span>
+                    <span class="skill-tag">Parallel Processing</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <h3>Programming</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">C#</span>
+                    <span class="skill-tag">C/C++</span>
+                    <span class="skill-tag">Node.JS</span>
+                    <span class="skill-tag">Dart</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">LaTeX</span>
+                    <span class="skill-tag">HTML/CSS</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <h3>Web</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">Express</span>
+                    <span class="skill-tag">MongoDB</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <h3>3D Development</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Unity</span>
+                    <span class="skill-tag">OpenGL</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <h3>Soft Skills</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Problem-Solving</span>
+                    <span class="skill-tag">Collaboration</span>
+                    <span class="skill-tag">Teamwork</span>
+                    <span class="skill-tag">Adaptability</span>
+                    <span class="skill-tag">Time Management</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section fade-in">
+        <div class="contact">
+            <h2>Contact</h2>
+            <div class="contact-simple">
+                <p class="contact-description">I'm always open to discussing new opportunities, connecting with fellow engineers and developers, or just having a chat about technology. Feel free to reach out!</p>
+                
+                <div class="email-container">
+                    <div class="email-address">tristanjlegg@gmail.com</div>
+                    <button class="copy-btn" title="Copy email to clipboard">
+                        <i class="fas fa-copy"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Tristan J. Legg - Contact me at tristanjlegg@gmail.com</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
