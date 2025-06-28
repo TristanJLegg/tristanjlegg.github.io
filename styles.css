@@ -601,10 +601,6 @@ nav {
     transition: color 0.3s ease;
 }
 
-.email-address:hover {
-    color: #ffffff;
-}
-
 .copy-btn {
     background: rgba(167, 85, 255, 0.1);
     border: 1px solid rgba(167, 85, 255, 0.3);
