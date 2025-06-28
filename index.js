@@ -331,3 +331,34 @@ document.addEventListener('mousemove', (e) => {
         }
     });
 });
+
+function adjustGridLayouts() {
+    const skillsGrid = document.querySelector('.skills-grid');
+    const projectsGrid = document.querySelector('.projects-grid');
+    
+    function adjustGrid(grid, cardWidth) {
+        if (!grid) return;
+        
+        const count = grid.children.length;
+        let maxWidth = '';
+        
+        // Fix the awkward cases
+        switch(count) {
+            case 4: // 4 items: 3-1 → 2-2
+                maxWidth = `${2 * cardWidth + 100}px`;
+                break;
+            case 7: // 7 items: 3-3-1 → 2-2-2-1
+                maxWidth = `${2 * cardWidth + 100}px`;
+                break;
+        }
+        
+        grid.style.maxWidth = maxWidth;
+        grid.style.margin = maxWidth ? '0 auto' : '';
+    }
+    
+    adjustGrid(skillsGrid, 300);
+    adjustGrid(projectsGrid, 350);
+}
+
+window.addEventListener('load', adjustGridLayouts);
+window.addEventListener('resize', adjustGridLayouts);
