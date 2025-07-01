@@ -763,10 +763,6 @@ footer {
         min-height: 100vh;
     }
 
-    .neural-network {
-        display: none;
-    }
-
     .hero-content {
         padding: 2rem 0;
     }
